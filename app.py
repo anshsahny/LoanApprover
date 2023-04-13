@@ -20,11 +20,15 @@ app.logger.setLevel(logging.ERROR)
 def home():
     return render_template('index.html')
 
-
 # Result Page
 @app.route('/prediction')
 def prediction():
     return render_template('prediction.html')
+
+# Error Page
+@app.route('/error')
+def error():
+    return render_template('error.html')
 
 
 if __name__ == '__main__':
