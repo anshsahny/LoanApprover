@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Prediction for Loan Approval</title>
+
+        <!-- Font Icon -->
+        <link rel="stylesheet" href="../static/fonts/material-icon/css/material-design-iconic-font.min.css">
+        <link rel="icon" type="image/x-icon" href="../static/images/favicon.ico">
+
+        <!-- Main css -->
+        <link rel="stylesheet" href="../static/css/style.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <!-- Prediction Status -->
+            <section class="sign-in">
+                <div class="container">
+                    <div class="signin-content">
+                        <div class="signin-image">
+                            <figure><img src="../static/images/signin-image.jpg" /></figure>
+                        </div>
+                        <div class="signin-form">
+                            <h2 class="form-title">Prediction</h2>
+                            <a>The loan approval is obtained using a machine learning model of <b>XGBoost</b>.
+                            It has accuracy of around 86%. To obtain this model performance, we have acquired the
+                            training data from a public dataset library</a>
+                            <div style="margin: 25px 0px;">
+                                {{ prediction }}
+                            </div>
+                            <div class="form-group">
+                                <a href="{{url_for('home')}}" class="term-service">Back to Home</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
